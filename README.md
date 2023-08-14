@@ -23,6 +23,10 @@ Laravel is accessible, powerful, and provides tools required for large, robust a
 
 
 [Este es un texto rojo](#red-text)
+[Este es un texto azul](#blue-text)
+
+<a name="red-text" style="color:red;">Este es un texto rojo simulado</a>
+<a name="blue-text" style="color:blue;">Este es un texto azul simulado</a>
 
 
 ## Test API on Postman

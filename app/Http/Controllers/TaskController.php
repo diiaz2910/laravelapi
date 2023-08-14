@@ -9,7 +9,8 @@ class TaskController extends Controller
 {
     public function index()
     {
-        $tasks = Task::all(); //Retrieve all tasks from the database.
+        $tasks = Task::all();
+        return response()->json($tasks);
     }
 
     public function store(Request $request)
@@ -25,7 +26,7 @@ class TaskController extends Controller
 
     public function show(Task $task)
     {
-        response()->json($task);
+        return response()->json($task);
     }
 
     public function update(Request $request, Task $task)
@@ -33,16 +34,16 @@ class TaskController extends Controller
         $request->validate([
             'title' => 'required|string|max:255',
             'description' => 'required|string',
-            'comppleted' => 'boolean'
+            'completed' => 'boolean'
         ]);
 
         $task->update($request->all());
         return response()->json($task);
     }
 
-    public function destroy(Task $task)
+    public function delete(Task $task)
     {
         $task->delete();
-        return response()->json(null,204);
+        return response()->json(null, 204);
     }
 }

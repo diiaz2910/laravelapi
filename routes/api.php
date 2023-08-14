@@ -20,3 +20,10 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 });
 
 
+Route::middleware('api')->prefix('tasks')->group(function(){
+    Route::get('/', [TaskController::class, 'index'])->name('tasks.index'); //Get all tasks
+    Route::post('/', [TaskController::class, 'store'])->name('tasks.store'); //Create a new task
+    Route::get('/{task}', [TaskController::class, 'show'])->name('tasks.show'); // Show a new task by ID
+    Route::put('/{task}', [TaskController::class, 'update'])->name('tasks.update'); // Update a task by ID
+    Route::delete('/{task}', [TaskController::class, 'delete'])->name('tasks.delete'); // Delete a task by ID
+});

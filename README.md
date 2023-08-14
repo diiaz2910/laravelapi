@@ -21,10 +21,14 @@ Laravel is a web application framework with expressive, elegant syntax. We belie
 
 Laravel is accessible, powerful, and provides tools required for large, robust applications.
 
+
+[Este es un texto rojo](#red-text)
+
+
 ## Test API on Postman
 Make sure you are running: php artisan serve
 On Postman, set HTTP and the request required (GET, POST, PUT or DELETE)
-<span style="color:red;">Este es un texto rojo</span>
+
 **POST**
 The following object in JSON format will send a POST request to add the data.
 {

@@ -22,13 +22,33 @@ Laravel is a web application framework with expressive, elegant syntax. We belie
 
 Laravel is accessible, powerful, and provides tools required for large, robust applications.
 
-## Learning Laravel
+## Test API on Postman
+Make sure you are running: php artisan serve
+On Postman, set HTTP and the request required (GET, POST, PUT or DELETE)
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+POST
+The following object in JSON format will send a POST request to add the data.
+{
+  "title": "Updated Task Title",
+  "description": "Updated task description",
+  "completed": true
+}
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+PUT
+Add the ID at the end of the URL bar on Postman: http://localhost:8000/api/tasks/1
+Then, the following object in JSON format will send a PUT request to update the data stored with ID 1.
+{
+  "title": "Updated Task Title",
+  "description": "Updated task description",
+  "completed": true
+}
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 2000 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+
+DELETE
+Add the ID at the end of the URL bar on Postman: http://localhost:8000/api/tasks/1
+Then, a DELETE request will destroy the data stored with ID 1.
+
+
 
 ## Laravel Sponsors
 

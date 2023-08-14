@@ -25,7 +25,7 @@ Laravel is accessible, powerful, and provides tools required for large, robust a
 Make sure you are running: php artisan serve
 On Postman, set HTTP and the request required (GET, POST, PUT or DELETE)
 
-###**POST**
+**POST**
 The following object in JSON format will send a POST request to add the data.
 {
   "title": "Updated Task Title",
@@ -33,7 +33,7 @@ The following object in JSON format will send a POST request to add the data.
   "completed": true
 }
 
-###**PUT**
+**PUT**
 Add the ID at the end of the URL bar on Postman: http://localhost:8000/api/tasks/1
 Then, the following object in JSON format will send a PUT request to update the data stored with ID 1.
 {
@@ -43,7 +43,7 @@ Then, the following object in JSON format will send a PUT request to update the 
 }
 
 
-###**DELETE**
+**DELETE**
 Add the ID at the end of the URL bar on Postman: http://localhost:8000/api/tasks/1
 Then, a DELETE request will destroy the data stored with ID 1.
 

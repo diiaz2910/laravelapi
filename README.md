@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
 <p align="center">
@@ -26,7 +25,7 @@ Laravel is accessible, powerful, and provides tools required for large, robust a
 Make sure you are running: php artisan serve
 On Postman, set HTTP and the request required (GET, POST, PUT or DELETE)
 
-POST
+<p>POST</p>
 The following object in JSON format will send a POST request to add the data.
 {
   "title": "Updated Task Title",

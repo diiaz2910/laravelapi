@@ -21,14 +21,6 @@ Laravel is a web application framework with expressive, elegant syntax. We belie
 
 Laravel is accessible, powerful, and provides tools required for large, robust applications.
 
-
-[Este es un texto rojo](#red-text)
-[Este es un texto azul](#blue-text)
-
-<a name="red-text" style="color:red;">Este es un texto rojo simulado</a>
-<a name="blue-text" style="color:blue;">Este es un texto azul simulado</a>
-
-
 ## Test API on Postman
 Make sure you are running: php artisan serve
 On Postman, set HTTP and the request required (GET, POST, PUT or DELETE)
